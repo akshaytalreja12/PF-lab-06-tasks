@@ -6,5 +6,6 @@ int main(){
 	for(b=1;b<=a;b++){
 		c=c*b;
 	}
-	printf("%d",c);
+	printf(" the factorial is %d",c);
 }
+
