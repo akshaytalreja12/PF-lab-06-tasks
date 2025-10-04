@@ -5,24 +5,15 @@ int main(){
 	scanf("%d",&a);
 	if (a<=1){
 		printf("The number %d is not prime",a);
-		
+		return 0;
 	}
-	else if (a==2){
-		printf("The number %d is prime ",a);
-		
-	}
-	for(b=2;b<=a;b++){
+	else{
+	for(b=2;b<=a/b;b++){
 		if (a%b==0){
 			printf("THe number %d is not prime",a);
-			break;
-		}
-		else if (a>3 && a%3==0){
-			printf("The number %d is not prime",a);
-			break;
-		}
-		else {
-			printf("THe number %d is prime",a);
-			break;
-		}
-	}
+			return 0;
+	}}
 }
+printf("the number is %d prime",a);
+}
+
