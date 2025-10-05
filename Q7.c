@@ -1,16 +1,15 @@
 #include <stdio.h>
 int main(){
 	 #define PIN 1233
-	 int a,b;
+	 int a,b=0;
 	 printf("Welcome!!!");
-	 for(a=0;a!=PIN;){
-	 	b++;
-	printf("\n\nEnter the PIN Code ");
+	 do {
+	printf("\nEnter the PIN Code ");
 	 scanf("%d",&a);
-	 if (a==PIN)
-	 break;
-	 	printf("Try again!");
+	 b++;
 	 	
 	 }
-	 printf("You Tried %d times to get it correct .",b);
+	 while (a!=PIN);
+	 printf("\NYou Tried %d times to get it correct .",b);
 }
+
